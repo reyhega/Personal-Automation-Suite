@@ -1,0 +1,9 @@
+Python standard library: os, shutil, datetime, smtplib, argparse
+
+Third-party libraries:
+
+PyPDF2 → PDF merge/split
+
+pyautogui → screenshots
+
+Project structure:
