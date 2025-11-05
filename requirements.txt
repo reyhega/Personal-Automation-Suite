@@ -1,11 +1,10 @@
-Python standard library: os, shutil, datetime, smtplib, argparse, logging
+# Core dependencies
+reportlab>=4.0.0
+PyPDF2>=3.0.0
 
-Third-party libraries:
+# Testing
+pytest>=8.0.0
 
-PyPDF2 → PDF merge/split
-
-pyautogui → screenshots
-
-pytest
-
-Project structure:
+# Optional but recommended for better developer experience
+pytest-cov>=4.1.0  # for coverage reports
+black>=24.0.0      # for code formatting (optional)
