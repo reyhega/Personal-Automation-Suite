@@ -9,7 +9,7 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
-def rename_files(path, prefix="", sufix=""):
+def rename_files(path, prefix="", suffix=""):
 
 ## Check if path exists if not, exit ##
 
@@ -33,12 +33,12 @@ def rename_files(path, prefix="", sufix=""):
 
         root, ext = os.path.splitext(file)
         timestamp = datetime.now().strftime("%H:%M:%S|%m%d%Y")
-        new_name = f"{prefix}{root}{sufix}{ext}"
+        new_name = f"{prefix}{root}{suffix}{ext}"
         
         new_path = os.path.join(path, new_name)
 
         if os.path.exists(new_path):
-            new_name = f"{prefix}{root}{timestamp}{sufix}{ext}"
+            new_name = f"{prefix}{root}{timestamp}{suffix}{ext}"
             new_path = os.path.join(path, new_name)
 
         try:
