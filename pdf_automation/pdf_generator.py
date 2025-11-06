@@ -8,8 +8,6 @@ from reportlab.lib.units import inch
 PAGE_HEIGHT = defaultPageSize[1]; PAGE_WIDTH = defaultPageSize[0]
 styles = getSampleStyleSheet()
 
-author = "Rey HeGa"
-
 def first_page_header(canvas, doc, custom_title):
     canvas.saveState()
     canvas.setFont('Helvetica-Bold', 16)
